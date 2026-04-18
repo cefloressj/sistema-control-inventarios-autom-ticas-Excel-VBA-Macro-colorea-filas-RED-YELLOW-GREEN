@@ -147,46 +147,6 @@ End Sub
 
 ---
 
-## 💡 Métrica Clave: Impacto Financiero
-
-| Métrica | Valor | Interpretación |
-|---------|-------|-----------------|
-| **Total Inventory Value** | $4.6M | Cash atrapado en stock |
-| **Average Coverage** | 18.5 días | Suficiente para manufactura |
-| **Service Level** | 95% promedio | Balanceado (no muy bajo) |
-| **Stockout Risk** | <5% | Aceptable (RED alerts < 5%) |
-| **EOQ Compliance** | 87% | Mejora: implementar strict adherence |
-
----
-
-## 🎯 Hallazgos Clave
-
-1. **SKU-059 CRÍTICO**
-   - Coverage: 0 días
-   - Estado: RED
-   - Acción: **Generar PO inmediata**
-
-2. **Categoría "Mechanical Assemblies" concentra 43% del valor**
-   - Seguimiento prioritario
-   - Revisar criticidad de componentes
-
-3. **Lead Time de China (15 días) impacta ROP**
-   - SKUs de "Sensors" tienen ROP alto
-   - Oportunidad: renegociar con proveedor SUP-006
-
----
-
-## 📊 Benchmarks vs. Realidad
-
-| Métrica | Valor Actual | Benchmark | Estatus |
-|---------|-------------|-----------|---------|
-| Service Level | 95% | 95-98% | ✓ On-target |
-| Days Inventory Outstanding | 18.5d | 15-25d | ✓ Good |
-| Inventory Turnover | 19.5x/año | 18-22x/año | ✓ Healthy |
-| Stockout Risk | <5% | <5% | ✓ Acceptable |
-
----
-
 ## 🚀 Cómo Usar el Archivo
 
 ### **Flujo Diario (5 minutos)**
@@ -212,32 +172,18 @@ End Sub
 
 ---
 
-## 📚 Referencias Técnicas
-
-- **Wilson, R. H. (1934).** "A Scientific Routine for Stock Control" — Harvard Business Review
-- **Nahmias, S. (2015).** *Production and Operations Analysis* — Waveland Press
-- **Chopra, S. & Meindl, P. (2016).** *Supply Chain Management* — Pearson
-
----
-
 ## 👤 Autor
 
 **Carlos Eduardo Flores Segura**  
 Ingeniero Mecánico | Especialidad: Supply Chain, Logística, Operaciones  
-Tecnologías: Excel, Power BI, SQL, Python  
+Tecnologías: Excel
 LinkedIn: [linkedin.com/in/carlosflores](https://linkedin.com)
 
----
 
-## 📄 Licencia
-
-MIT License — Abierto para fines educativos y comerciales.
-
----
 
 ## 🙏 Notas Técnicas
 
-**Dataset:** Simulado con parámetros reales de la industria FMCG/Manufacturing  
+**Dataset:** Simulado con parámetros reales 
 **Validación:** Fórmulas verificadas contra teoría clásica de Operations Research  
 **Escalabilidad:** Funciona igual con 60 SKUs o 500+ SKUs  
 
